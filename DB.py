@@ -47,7 +47,7 @@ class DB(object):
     def SetCommits(self,id,DataTime, temp1, temp2, hum):
         create_users = """
         INSERT INTO
-          {5}} (id,DataTime, Temperature1, Temperamure2, Humidity)
+          {5} (id,DataTime, Temperature1, Temperamure2, Humidity)
         VALUES
           ({0},'{1}',{2},{3},{4});
         """.format(id,DataTime, temp1, temp2, hum, data.name_db)
